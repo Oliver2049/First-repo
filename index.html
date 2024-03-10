@@ -2,6 +2,8 @@
   <head>
     <title>My First Web Page</title>
     <meta charset="utf-8">
+    <meta name="author" content="Oliver Doan" />
+    <meta name="description" content="Demo" />
     <viewport content="width=device-width, initial-scale=1">
       <link
       rel="stylesheet"
@@ -12,11 +14,17 @@
     />
   </head>
   <body>
-    <h1 id="heading">Welcome to my first web page!</h1>
-    <p>This is a paragraph of text that will be displayed on the web page.</p>
-    <div>
-      <button onclick="changeText()">Click me!</button>
+    <div class="container">
+      <div class="row">
+        <div class="col s12"> 
+    <h1 id="heading" class="center-align">Welcome to my first web page!</h1>
+    <p class="center-align">Click the button below to see magic!</p>
+        </div>
+        <div class="col s12 center-align">
+      <button class="btn btn-primary" onclick="changeText()">Click me!</button>
     </div>
+  </div>
+      </div>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
